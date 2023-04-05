@@ -43,3 +43,4 @@ Model, önceden ayrılan test veri seti ile doğruluk ve performans ölçümleri
 Bu BERT modeli, Türkçe doğal dil işleme projelerinde kullanılmak üzere geliştirilmiştir. Özellikle sosyal medya verilerinin analizi ve sınıflandırılması gibi uygulamalarda yararlı olabilir. Modelin kullanımı oldukça basittir, sadece eğitilmiş modeli indirerek kullanabilirsiniz.
 Bu proje, Türkçe doğal dil işleme alanında gelişim sağlamak için hazırlanmıştır. Bu amaç doğrultusunda, herkesin kullanabileceği ve geliştirebileceği bir kaynak sunulması hedeflenmiştir.
 Şeffaf ve açıklayıcı bilgilerle paylaşılan bu modelin, sektördeki diğer araştırmacılara ve profesyonellere de fayda sağlaması ümidiyle.
+#acikhack2023
