@@ -4,7 +4,7 @@ Türkçe Doğal Dil İşleme Yarışması için BERT Modeli - PyTorch
 
 Bu projede, Türkçe Doğal Dil İşleme Yarışması için bir BERT modeli oluşturduk. PyTorch kütüphanesini kullanarak BERT modelini başarılı bir şekilde eğittik ve optimize ettik. Olabilecek en yüksek doğruluk ve performansı sağlamak için özenle seçilmiş verilerle çalıştık.
 
-Projenin GitHub platformuna yüklenmesiyle birlikte, kullandığımız ekstra verileri "data" klasöründe, eğitim modelini ise "train" adlı dosyada yayınlayacağız. 
+Projenin GitHub platformuna yüklenmesiyle birlikte, kullandığımız ekstra verileri "cleaned_data" klasöründe, eğitim modelini ise "train" adlı dosyada yayınlayacağız. 
 
 ## İçindekiler
 - [Veri Seti](#veri-seti)
