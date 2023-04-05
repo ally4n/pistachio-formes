@@ -23,14 +23,14 @@ Projede kullanılan Türkçe veri seti birkaç kaynaktan elde edilmiştir. Bu ka
 Veri seti üzerinde önemli bir temizleme süreci gerçekleştirdik. Regex kodumuzla verileri düzenledik ve modeli yanıltabilecek tüm veri kaynaklı sorunları ortadan kaldırdık. Bu temizleme işlemi, modelin doğru ve hassas tahminler yapmasına yardımcı oldu.
 
 ## Veri Bölme
-Veri seti %80 eğitim ve %20 test olacak şekilde rastgele olarak ayrılmıştır. Bu yapı, modelin öğreneceği ve değerlendirileceği verilerin doğru bir dağılım içinde olmasını sağlar. Ayrıca daha sonraki süreçlerde modelin performansını değerlendirmeye ve optimize etmeye yardımcı oldu.
+Veri seti %80 eğitim, %10 validation, %10 test olacak şekilde rastgele olarak ayrılmıştır. Bu yapı, modelin öğreneceği ve değerlendirileceği verilerin doğru bir dağılım içinde olmasını sağlar. Ayrıca daha sonraki süreçlerde modelin performansını değerlendirmeye ve optimize etmeye yardımcı oldu.
 
 ## Tokenizasyon
-Eğitim verilerini ön işleyerek Multi-Language Tokenizer kullanarak tokinize ettik. Bu, BERT modelinin veriler üzerinde doğru bir şekilde çalışmasına ve metni etkili şekilde işlemesine yardımcı oldu. Bu işlem, metin verilerinin modelin anlamlandırabileceği ve öğrenebileceği tokenlere dönüştürülmesidir.
+Eğitim verilerini ön işleyerek Multi-Language Tokenizer olan Berttokenizer kullanarak tokinize ettik. Berttokenizer cümle başına [CLS] sonuna [SEP] arta kalan kısımlara da [PAD] etiketi koymaktadır. Bu, BERT modelinin veriler üzerinde doğru bir şekilde çalışmasına ve metni etkili şekilde işlemesine yardımcı oldu. Bu işlem, metin verilerinin modelin anlamlandırabileceği ve öğrenebileceği tokenlere dönüştürülmesidir.
 
 ## Model Eğitimi
 BERT modelini, girilen verilerin önce "is_offensive" ardından
-"target" sütununu tahmin edecek şekilde multi-label text classification (çok etiketli metin sınıflandırma) şekline ayarladık. Bu, belge analizinde ve doğru sınıflandırma yapmada önemli bir adımdır. 
+"target" sütununu tahmin edecek şekilde multi-class text classification (çok etiketli metin sınıflandırma) şekline ayarladık. Bu, belge analizinde ve doğru sınıflandırma yapmada önemli bir adımdır. 
 PyTorch kütüphanesini kullanarak, modelimizi başarılı bir şekilde tamamlayacak şekilde ayarladık ve BERT ile eğitim sürecini tamamladık. Bu, modelin daha sonraki testlerde ve gerçek zamanlı kullanımda yüksek doğruluk ve performans elde etmesini sağladı.
 
 ## Fine-Tuning
