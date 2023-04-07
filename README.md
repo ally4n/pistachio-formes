@@ -8,6 +8,8 @@ Projenin GitHub platformuna yüklenmesiyle birlikte, kullandığımız ekstra ve
 
 Projenin "Veri Temizleme" işlemi dışındaki işlemleri, "train" adlı dosyanın içerisinde yapılmıştır.
 
+Model ağırlıklarına https://drive.google.com/file/d/1EPktR_awnKo75oZs58oMs3jL39JnkhpZ/ linkinden ulaşabilirsiniz.
+
 ## İçindekiler
 - [Veri Seti](#veri-seti)
 - [Veri Temizleme](#veri-temizleme)
