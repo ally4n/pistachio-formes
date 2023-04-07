@@ -1,0 +1,7 @@
+gradio
+pandas
+re
+torch
+numpy
+transformers
+tqdm
